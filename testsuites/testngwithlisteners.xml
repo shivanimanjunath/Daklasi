@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+	
+	<listeners>
+		<listener class-name="Tutorial.Framework.TestComponents.Listeners"/>
+			
+	</listeners>
+	
+	
+  <test thread-count="5" name="ErrorTest">
+    <classes>
+      <class name="Tutorial.Framework.ShopmodifiedErrorvalidationsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ <test thread-count="5" name="PassTest">
+    <classes>
+      <class name="Tutorial.Framework.ShopmodifiedwithJsonTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
